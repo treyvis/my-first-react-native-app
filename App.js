@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 class Hello extends React.Component {
   render() {
@@ -15,6 +15,10 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Hello name='Trey' />
         <Hello name='Aubrey' />
+        <Image 
+          source={{uri: 'https://s3-media4.fl.yelpcdn.com/bphoto/6lYNesrYPiU2Y4_HuFpysA/348s.jpg'}}
+          style={{width: '100%', height: 200}}
+        />
       </View>
     );
   }
